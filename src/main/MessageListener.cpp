@@ -48,7 +48,7 @@ static const char* MessageListener_onMessage_docstring =
 
 struct MessageListenerWrap : MessageListener, py::wrapper<MessageListener>
 {
-    virtual void onMessage(const Message* message)
+    virtual void onMessage(const Message* message) throw ()
     {
         PyGILState_STATE gstate = PyGILState_Ensure();
 

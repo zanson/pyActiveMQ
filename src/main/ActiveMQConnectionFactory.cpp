@@ -47,10 +47,10 @@ void export_ActiveMQConnectionFactory()
                                     py::return_value_policy<py::return_by_value>()),
                       &ActiveMQConnectionFactory::setPassword,
                       AMQConnectionFactory_password_docstring)
-        .add_property("brokerURL",
+      /*        .add_property("brokerURL",
                       make_function(&ActiveMQConnectionFactory::getBrokerURL,
                                     py::return_value_policy<py::return_by_value>()),
                       &ActiveMQConnectionFactory::setBrokerURL,
-                      AMQConnectionFactory_brokerURL_docstring)
+                      AMQConnectionFactory_brokerURL_docstring)*/
         ;
 }
